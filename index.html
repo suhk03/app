@@ -1,72 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+    <title>"EMOTIONAL MUSIC PLAYS"</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <script>
+      var clicks = 0;
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+      function onCLick() {
+        clicks += 1;
+        var message = "[emotional music plays]";
+        if (clicks == 1) {
+          message = "[emotional music plays]";
+        } else if (clicks == 2) {
+          message = "Yeah…";
+        } else if (clicks == 3) {
+          message = "I don’t know,";
+        } else if (clicks == 4) {
+          message = "I’ve been going through some stuff lately.";
+        } else if (clicks == 5) {
+          message = "No, nothing bad, just, you know,";
+        } else if (clicks == 6) {
+          message = "Sometimes you just want everything to slow down.";
+        } else if (clicks == 7) {
+          message = "But it doesn’t.";
+        } else if (clicks == 8) {
+          message = "When it’s spring, and the cherries are in bloom,";
+        } else if (clicks == 9) {
+          message = "It always makes me so nostalgic.";
+        } else if (clicks == 10) {
+          message =
+            "It’s like a thousand memories are packed into each flower.";
+        } else if (clicks == 11) {
+          message =
+            "Spring is such a short season, so the memories feel extra sharp.";
+        } else if (clicks == 12) {
+          message = "Does that make sense?";
+        } else if (clicks == 13) {
+          message = "…";
+        } else if (clicks == 14) {
+          message = "Haha…";
+        } else if (clicks == 15) {
+          message = "The trees always bloom all at once, almost.";
+        } else if (clicks == 16) {
+          message = "You’re going about your days and then, all of a sudden,";
+        } else if (clicks == 17) {
+          message = "Flowers, everywhere, an explosion.";
+        } else if (clicks == 18) {
+          message =
+            "This time of year, I get worried I’ll never have enough time.";
+        } else if (clicks == 19) {
+          message = "<i>‘it’s no use worrying about Time’—";
+        } else if (clicks == 20) {
+          message = "—That’s Frank O’Hara. ‘Animals’.";
+        } else if (clicks == 21) {
+          message =
+            "It’s like everything I do, I have to do while the cherries bloom.";
+        } else if (clicks == 22) {
+          message = "And I get so worried, trying to grab all this joy";
+        } else if (clicks == 23) {
+          message = "Right out of the air,";
+        } else if (clicks == 24) {
+          message = "And I worry that if I don't get it now,";
+        } else if (clicks == 25) {
+          message = "I’ll never get it.";
+        } else if (clicks == 26) {
+          message = "When I’m happy, I want to keep it with me forever,";
+        } else if (clicks == 27) {
+          message = "You know?";
+        } else if (clicks == 28) {
+          message = "I know that’s not how it works.";
+        } else if (clicks == 29) {
+          message = "It just feels like it sometimes—like I’ll lose it.";
+        } else if (clicks == 30) {
+          message = "…";
+        } else if (clicks == 31) {
+          message = "Uh-huh.";
+        } else if (clicks == 32) {
+          message = "…";
+        } else if (clicks == 33) {
+          message = "Haha, yeah, you’re right.";
+        } else if (clicks == 34) {
+          message = "It’s true that joy comes when you don’t expect it.";
+        } else if (clicks == 35) {
+          message = "You can trust that, if you can trust anything.";
+        } else if (clicks == 36) {
+          message = "Yeah.";
+        } else if (clicks == 37) {
+          message = "Yeah, I am happy.";
+        } else if (clicks == 38) {
+          message = "Uh-huh.";
+        } else if (clicks == 39) {
+          message = "…";
+        } else if (clicks == 40) {
+          message = "Uh-huh.";
+        } else if (clicks == 41) {
+          message = "…";
+        } else if (clicks == 42) {
+          message = "Love you too.";
+        } else if (clicks == 43) {
+          message =
+            "<span id='credits'>Audio is ‘End II’ by <a href='https://j-e-n.bandcamp.com/' target='_blank'>jen.</a></span>";
+        } else if (clicks == 44) {
+          message =
+            "<span id='credits'>Poem and graphics by Larissa Pham.</span>";
+        } else if (clicks == 45) {
+          message = "<span id='credits'>Reload page to replay.</span>";
+        } else if (clicks >= 46) {
+          message = " ";
+        }
+        document.getElementById("message").innerHTML = message;
+      }
+    </script>
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <style type="text/css">
+        body {
 
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+
+      body {
+          background-image: url("https://i.imgur.com/zLms2y0.gif");
+          background-repeat: no-repeat;
+          background-color: #000000;
+          background-size: cover;
+      }
+
+
+      #message {
+          height: 150px;
+          width: 800px;
+          position: fixed;
+          bottom: 80px;
+          left: 50%;
+          margin-left: -400px;
+          overflow-y: hidden;
+          text-align: center;
+          font-family: "Open Sans", Helvetica, Arial;
+          font-weight: bolder;
+          font-size: 48px;
+          color: yellow;
+          -webkit-text-stroke: 1px black;
+          paint-order: stroke fill;
+          text-shadow: 2px 2px 2px #000000;
+
+      }
+
+      #clicky {
+          position: fixed;
+          bottom: 50px;
+          left: 50%;
+          width: 800px;
+          height: 10px;
+          margin-left: -400px;
+          text-align: center;
+      }
+
+      #credits {
+          text-align: center;
+          color: white;
+          font-family: Helvetica;
+          font-weight: normal;
+          -webkit-text-stroke: 0px black;
+          text-shadow: 0px 0px 0px #000000;
+          font-size: 24px;
+
+      }
+
+      #arrow {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 2;
+          font-family: Helvetica;
+          font-weight: normal;
+          font-size: 24px;
+          opacity: .5;
+         }
+
+      button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          text-decoration: underline;
+          padding: 0;
+          text-align: center;
+          font-size: 16px;
+      }
+
+      a:link {
+          text-decoration: underline;
+          color: white;
+
+      }
+
+      a:visited {
+          text-decoration: underline;
+          color: white;
+
+      }
+    </style>
+    
+    <div
+    
+    
+    
   </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
-      </div>
-    </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
 </html>
