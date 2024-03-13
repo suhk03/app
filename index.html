@@ -1,5 +1,7 @@
 <html>
   <title>a butterfly goes</title>
+  <head>
+    
   <script> var scroll = setInterval(function(){ window.scrollBy(0,1); }, 100); </script>
   
   <style type="text/css"> 
@@ -59,6 +61,232 @@ a:active {
     text-decoration: underline;
 }
 </style>
+ </head>
   
+  
+  
+  
+<body data-new-gr-c-s-check-loaded="14.1160.0" data-gr-ext-installed="">
+<div align="center" style="position: center; padding: 200px;">
+<div id="feature" style="width: 500px; padding: 50 50 50 50; text-align: left">
+a butterfly<br><br>
+goes<br><br>
+where the salt is<br><br><br><br>
+licks<br>
+the sweat<br><br>
+from skin<br><br><br><br>
+when i was eighteen you and i bought monarch caterpillars off the internet<br><br>
+they came in a jar, packed next to their own food <br><br>
+they were fat, little, striped green and black<br><br><br><br><br><br>
+for days, we watched them crawl around a mesh tent that had been sent to us<br><br><br><br><br><br>
+one day you called me over to see that they had all turned into pupae<br><br>
+green jade hanging from the ceiling of the tent<br><br><br><br><br><br>
+annie dillard describes a moth emerging from its chrysalis—hot, she says it was<br><br>
+shaking in her hands<br><br><br><br><br><br>
+the ruined moth didn’t have enough room to spread its wings, they hardened, crystallized<br><br><br><br><br><br>
+you want to trust a living thing, sometimes you try to touch it<br><br><br><br><br><br><br><br>
+the butterflies emerged, one at a time, none of them dead<br><br><br><br><br><br><br><br>
+they fluttered around the mesh tent, we felt sorry, we unzipped it and they careened<br><br>
+around your dorm<br><br><br><br>
+knocking against<br><br>
+the windows<br><br><br><br><br><br><br><br>
+a butterfly<br><br>
+goes<br><br>
+where the salt is<br><br><br><br><br><br>
+licks<br><br><br><br>
+the sweat<br><br>
+from skin<br><br><br><br><br><br>
+i put my hand out and they landed<br><br>
+ticklish<br><br>
+bristly body tiny legs<br><br><br><br>
+very light<br><br><br><br>
+i thought i was magic, that they loved me<br><br><br><br><br><br>
+you want an animal to trust you, don’t you?<br><br><br><br><br><br><br><br>
+it wasn’t love but they ate<br><br><br><br><br><br><br><br>
+we didn’t know how else to feed them<br><br><br><br><br><br>
+we didn’t think of letting them go<br><br><br><br><br><br><br><br>
+
+when they died<br><br>
+because of course they died<br><br>
+because everything dies<br><br><br><br><br><br>
+we kept their bodies intact<br><br><br><br><br><br>
+and used them in art<br><br><br><br>
+
+you took pictures of me<br><br>
+the scales<br>
+came off in my hands<br><br><br><br>
+
+little dust<br><br><br><br>
+
+like something from a distant planet<br><br><br><br>
+
+and then what—<br><br><br><br>
+
+i forget what happened<br><br><br><br>
+
+we grew up<br><br><br><br><br><br>
+
+and distant<br><br><br><br>
+
+we got<br>
+hot and away from each other<br><br><br><br><br><br><br><br>
+
+you live somewhere else now<br><br>
+
+i live somewhere else too<br><br><br><br><br><br><br><br>
+
+  <div style="text-align:right; width:500px">Larissa Pham 2017<br><a href="/poem-club">home</a></div>
+</div>
+</div>
+  
+<script language="JavaScript1.2">
+
+/*
+Flying Butterfly script (By BGAudioDr@aol.com)
+Modified slightly/ permission granted to Dynamic Drive to feature script in archive
+For full source, visit http://www.dynamicdrive.com
+*/
+
+var Ymax=8;                                //MAX # OF PIXEL STEPS IN THE "X" DIRECTION
+var Xmax=8;                                //MAX # OF PIXEL STEPS IN THE "Y" DIRECTION
+var Tmax=10000;                        //MAX # OF MILLISECONDS BETWEEN PARAMETER CHANGES
+
+//FLOATING IMAGE URLS FOR EACH IMAGE. ADD OR DELETE ENTRIES. KEEP ELEMENT NUMERICAL ORDER STARTING WITH "0" !!
+
+var floatimages=new Array();
+floatimages[0]='https://i.imgur.com/E5v5W.gif';
+floatimages[1]='https://i.imgur.com/qdFwpYs.gif';
+floatimages[2]='https://i.imgur.com/4BT0YDm.gif';
+floatimages[3]='https://i.imgur.com/qdFwpYs.gif';
+floatimages[4]='https://i.imgur.com/4BT0YDm.gif';
+floatimages[5]='https://i.imgur.com/qdFwpYs.gif';
+floatimages[6]='https://i.imgur.com/4BT0YDm.gif';
+floatimages[7]='https://i.imgur.com/qdFwpYs.gif';
+floatimages[8]='https://i.imgur.com/4BT0YDm.gif';
+floatimages[9]='https://i.imgur.com/qdFwpYs.gif';
+floatimages[10]='https://i.imgur.com/4BT0YDm.gif';
+floatimages[11]='https://i.imgur.com/qdFwpYs.gif';
+floatimages[12]='https://i.imgur.com/4BT0YDm.gif';
+
+//*********DO NOT EDIT BELOW***********
+var NS4 = (navigator.appName.indexOf("Netscape")>=0 && parseFloat(navigator.appVersion) >= 4 && parseFloat(navigator.appVersion) < 5)? true : false;
+var IE4 = (document.all)? true : false;
+var NS6 = (parseFloat(navigator.appVersion) >= 5 && navigator.appName.indexOf("Netscape")>=0 )? true: false;
+var wind_w, wind_h, t='', IDs=new Array();
+for(i=0; i<floatimages.length; i++){
+t+=(NS4)?'<layer name="pic'+i+'" visibility="hide" width="10" height="10"><a href="javascript:hidebutterfly()">' : '<div id="pic'+i+'" style="position:absolute; visibility:hidden;width:10px; height:10px; z-index:1000">';
+t+='<img src="'+floatimages[i]+'" name="p'+i+'" border="0">';
+t+=(NS4)? '</a></layer>':'</a></div>';
+}
+document.write(t);
+
+function moveimage(num){
+if(getidleft(num)+IDs[num].W+IDs[num].Xstep >= wind_w+getscrollx())IDs[num].Xdir=false;
+if(getidleft(num)-IDs[num].Xstep<=getscrollx())IDs[num].Xdir=true;
+if(getidtop(num)+IDs[num].H+IDs[num].Ystep >= wind_h+getscrolly())IDs[num].Ydir=false;
+if(getidtop(num)-IDs[num].Ystep<=getscrolly())IDs[num].Ydir=true;
+moveidby(num, (IDs[num].Xdir)? IDs[num].Xstep :  -IDs[num].Xstep , (IDs[num].Ydir)?  IDs[num].Ystep:  -IDs[num].Ystep);
+}
+
+function getnewprops(num){
+IDs[num].Ydir=Math.floor(Math.random()*2)>0;
+IDs[num].Xdir=Math.floor(Math.random()*2)>0;
+IDs[num].Ystep=Math.ceil(Math.random()*Ymax);
+IDs[num].Xstep=Math.ceil(Math.random()*Xmax)
+setTimeout('getnewprops('+num+')', Math.floor(Math.random()*Tmax));
+}
+
+function getscrollx(){
+if(NS4 || NS6)return window.pageXOffset;
+if(IE4)return document.body.scrollLeft;
+}
+
+function getscrolly(){
+if(NS4 || NS6)return window.pageYOffset;
+if(IE4)return document.body.scrollTop;
+}
+
+function getid(name){
+if(NS4)return document.layers[name];
+if(IE4)return document.all[name];
+if(NS6)return document.getElementById(name);
+}
+
+function moveidto(num,x,y){
+if(NS4)IDs[num].moveTo(x,y);
+if(IE4 || NS6){
+IDs[num].style.left=x+'px';
+IDs[num].style.top=y+'px';
+}}
+
+function getidleft(num){
+if(NS4)return IDs[num].left;
+if(IE4 || NS6)return parseInt(IDs[num].style.left);
+}
+
+function getidtop(num){
+if(NS4)return IDs[num].top;
+if(IE4 || NS6)return parseInt(IDs[num].style.top);
+}
+
+function moveidby(num,dx,dy){
+if(NS4)IDs[num].moveBy(dx, dy);
+if(IE4 || NS6){
+IDs[num].style.left=(getidleft(num)+dx)+'px';
+IDs[num].style.top=(getidtop(num)+dy)+'px';
+}}
+
+function getwindowwidth(){
+if(NS4 || NS6)return window.innerWidth;
+if(IE4)return document.body.clientWidth;
+}
+
+function getwindowheight(){
+if(NS4 || NS6)return window.innerHeight;
+if(IE4)return document.body.clientHeight;
+}
+
+function init(){
+wind_w=getwindowwidth();
+wind_h=getwindowheight();
+for(i=0; i<floatimages.length; i++){
+IDs[i]=getid('pic'+i);
+if(NS4){
+IDs[i].W=IDs[i].document.images["p"+i].width;
+IDs[i].H=IDs[i].document.images["p"+i].height;
+}
+if(NS6 || IE4){
+IDs[i].W=document.images["p"+i].width;
+IDs[i].H=document.images["p"+i].height;
+}
+getnewprops(i);
+moveidto(i , Math.floor(Math.random()*(wind_w-IDs[i].W)), Math.floor(Math.random()*(wind_h-IDs[i].H)));
+if(NS4)IDs[i].visibility = "show";
+if(IE4 || NS6)IDs[i].style.visibility = "visible";
+startfly=setInterval('moveimage('+i+')',Math.floor(Math.random()*100)+100);
+}}
+
+function hidebutterfly(){
+for(i=0; i<floatimages.length; i++){
+if (IE4)
+eval("document.all.pic"+i+".style.visibility='hidden'")
+else if (NS6)
+document.getElementById("pic"+i).style.visibility='hidden'
+else if (NS4)
+eval("document.pic"+i+".visibility='hide'")
+clearInterval(startfly)
+}
+}
+
+if (NS4||NS6||IE4){
+window.onload=init;
+window.onresize=function(){ wind_w=getwindowwidth(); wind_h=getwindowheight(); }
+}
+
+</script><div id="pic0" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 6px; top: 4350px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p0" border="0"></div><div id="pic1" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 3px; top: 4059px;"><img src="https://i.imgur.com/qdFwpYs.gif" name="p1" border="0"></div><div id="pic2" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 2px; top: 4334px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p2" border="0"></div><div id="pic3" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 4px; top: 4241px;"><img src="https://i.imgur.com/qdFwpYs.gif" name="p3" border="0"></div><div id="pic4" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 5px; top: 3885px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p4" border="0"></div><div id="pic5" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 10px; top: 4172px;"><img src="https://i.imgur.com/qdFwpYs.gif" name="p5" border="0"></div><div id="pic6" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 2px; top: 4033px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p6" border="0"></div><div id="pic7" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 11px; top: 3869px;"><img src="https://i.imgur.com/qdFwpYs.gif" name="p7" border="0"></div><div id="pic8" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 1px; top: 4365px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p8" border="0"></div><div id="pic9" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 7px; top: 4006px;"><img src="https://i.imgur.com/qdFwpYs.gif" name="p9" border="0"></div><div id="pic10" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 5px; top: 3971px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p10" border="0"></div><div id="pic11" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 1px; top: 3940px;"><img src="https://i.imgur.com/qdFwpYs.gif" name="p11" border="0"></div><div id="pic12" style="position: absolute; visibility: visible; width: 10px; height: 10px; z-index: 1000; left: 2px; top: 3884px;"><img src="https://i.imgur.com/4BT0YDm.gif" name="p12" border="0"></div>
+
+
+
+</body>
   
 </html>
