@@ -1,0 +1,70 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    background-image: url("https://cdn.glitch.global/95b1a68f-a41f-464d-acf3-2746dc365c27/Flower.png?v=1713378359336");
+    background-size: 100%;
+    background-position: top; 
+    background-repeat: no-repeat; 
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    background-color: blanchedalmond;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    position: absolute;
+}
+
+#fieldi {
+    height: 22%;
+    width: auto;
+    top: 33%;
+    left: 11%;
+    cursor: crosshair;
+}
+
+#fieldi:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 235, 205, 0.486);
+}
+
+#fieldii {
+    height: auto;
+    width: 13%;
+    top: 220px;
+    right: 60px;
+    cursor: crosshair;
+}
+
+#fieldii:hover {
+    box-shadow: 0 0 10px 10px rgba(221, 232, 213, 0.486);
+}
+
+#fieldiii {
+    height: auto;
+    width: 13%;
+    top: 120px;
+    right: 900px;
+    cursor: crosshair;
+}
+
+#fieldiii:hover {
+    box-shadow: 0 0 10px 10px rgba(221, 232, 213, 0.486);
+}
+
+@media screen and (max-width: 600px) {
+    html, body {
+        background-size: auto auto;
+    }
+
+}
